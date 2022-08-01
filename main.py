@@ -12,6 +12,7 @@ for i in start_indexes:
     # skipping '<img characters
     c = i + 4
     src = ''
+    alt = ''
     while response_str[c] != '>':
         if response_str.startswith('src=', c):
             # skipping 'src="' characters
@@ -20,6 +21,14 @@ for i in start_indexes:
                 src = src + response_str[srcStart]
                 srcStart += 1
             print(src)
+        if response_str.startswith('alt=', c):
+            # skipping 'alt="' characters
+            altStart = c + 5
+            while response_str[altStart] != '"':
+                alt = alt + response_str[altStart]
+                altStart += 1
+            print(alt)
+
         c += 1
 
 print('Total {} image src'.format(len(start_indexes)))
