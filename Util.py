@@ -25,6 +25,7 @@ class Util:
         for tag in self.search_tags:
             if src.find(tag) != -1 or alt.find(tag) != -1:
                 print(src)
+                # print(src, alt, 'TAG', tag)
                 return 1
         return 0
 
