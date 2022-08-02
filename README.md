@@ -39,3 +39,11 @@ search_tags = [
     'squirrel', 'John', '', 
 ]
 ```
+
+## Running the program
+
+From the project directory run the below command to execute the program 
+
+```bash
+python main.py
+```
