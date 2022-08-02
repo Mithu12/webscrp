@@ -11,7 +11,7 @@ web_urls = [
     'https://gratisography.com/',
 ]
 
-# an empty string '' as a tag will print all available sources
+# an empty string '' as a tag will print all available image sources
 search_tags = [
     'squirrel', 'John', 'riding', 'aurora', 'office', 'palm', 'young', 'works', 'woman', 'beach',
 ]
@@ -32,4 +32,4 @@ for url in web_urls:
         c = i + 4
         search_helper.filter_images(c)
     # print('Total {} images found'.format(search_helper.count))
-    # print()
+    print()
