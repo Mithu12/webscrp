@@ -2,20 +2,20 @@
 
 A simple python program for scraping images from web pages. It will search a web page based on provided tags and print the image sources to the console.
 
-##Requirements
+## Requirements
 
 This program is compatible with Python 3. It requires the following modules:
 
  * [requests](https://pypi.org/project/requests/)
 
-##Installation
+## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requests. 
 ```bash
 pip install requests
 ```
 
-##Usage
+## Usage
 
 The "web_urls" variable in main.py file contains a list of web pages. This program will scrape images from this list. Modify this list to specify which pages the program needs to scrape from. 
 ```python
